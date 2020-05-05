@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>A* Pathfinding</title>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <script src="cell.js"></script>
+
+    <nav id="navbar" class="navbar navbar-dark bg-dark">
+      <h1 id="h1Head" class="navbar-text">
+        A* Pathfinding Visualizer
+      </h1>
+      <hr class="my-4" />
+    </nav>
+
+    <ul class="list-group list-group-horizontal-lg">
+      <li class="list-group-item">
+        Click and/or drag on empty cells to draw walls
+      </li>
+      <li class="list-group-item">Visualize to see the A* algorithm at work</li>
+      <li class="list-group-item">Create random walls at a 30% rate</li>
+      <li class="list-group-item">
+        Make sure to reset grid before visualizing again!
+      </li>
+    </ul>
+
+    <div id="sketch-container"></div>
+
+    <ul class="list-group list-group-horizontal-lg">
+      <li class="list-group-item">
+        Legend:
+      </li>
+      <li id="openset" class="list-group-item">
+        Cells in the Open Set (newly discovered cells)
+      </li>
+      <li id="closedset" class="list-group-item">
+        Cells in the Closed Set (Already assesed cells)
+      </li>
+      <li id="oppath" class="list-group-item">Optimal Path</li>
+    </ul>
+  </body>
+</html>

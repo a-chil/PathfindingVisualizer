@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#sketch-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#openset {
+  background-color: #00ffcc;
+}
+#closedset {
+  background-color: #009999;
+}
+#oppath {
+  background-color: #ffff66;
+}
+#h1Head {
+  color: white;
+}
