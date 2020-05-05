@@ -1,4 +1,5 @@
 # PathfindingVisualizer
+Built with p5.js framework for handling the canvas and its corresponding interactive functionality.
 
 Finding the most optimal path from starting point (start node) to destination (end node). The application uses the A* algorithm,
 a common path search algorithm. More about the algorithm: https://en.wikipedia.org/wiki/A*_search_algorithm
